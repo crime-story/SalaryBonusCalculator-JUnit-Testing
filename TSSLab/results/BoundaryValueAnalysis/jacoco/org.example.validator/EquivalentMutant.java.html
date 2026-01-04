@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EquivalentMutant.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TSSLab</a> &gt; <a href="index.source.html" class="el_package">org.example.validator</a> &gt; <span class="el_source">EquivalentMutant.java</span></div><h1>EquivalentMutant.java</h1><pre class="source lang-java linenums">package org.example.validator;
+
+<span class="nc" id="L3">public class EquivalentMutant {</span>
+    public double calculateBonus(int sales, int absentDays,  boolean isManager) {
+<span class="nc bnc" id="L5" title="All 2 branches missed.">        if (sales &lt; 1000) {</span>
+<span class="nc" id="L6">            return 0.0; // no bonus :(</span>
+<span class="nc bnc" id="L7" title="All 2 branches missed.">        } else if (sales &lt;= 5000) {</span>
+<span class="nc" id="L8">            return sales * 0.5; // bonus 5%</span>
+        } else {
+            // if sales &gt; 5000
+            // Modificam &lt; in &lt;= si scadem valoarea cu 1.
+            // Pentru numere intregi, &quot;mai mic decat 3&quot; e fix acelasi lucru cu &quot;mai mic sau egal cu 2&quot;.
+<span class="nc bnc" id="L13" title="All 4 branches missed.">            if (absentDays &lt;= 2 || isManager) {</span>
+<span class="nc" id="L14">                return sales * 0.10; // bonus 10%</span>
+            } else {
+<span class="nc" id="L16">                return sales * 0.07; // bonus 7%</span>
+            }
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
