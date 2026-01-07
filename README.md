@@ -80,7 +80,7 @@ Pentru rularea proiectului este necesară versiunea Java JDK 21 și Maven instal
 
 1.  **Clonarea repository-ului:**
     ```bash
-    git clone [https://github.com/crime-story/SalaryBonusCalculator-JUnit-Testing.git](https://github.com/crime-story/SalaryBonusCalculator-JUnit-Testing.git)
+    git clone https://github.com/crime-story/SalaryBonusCalculator-JUnit-Testing.git
     ```
 
 2.  **Rularea testelor JUnit folosind linia de comandă:**
