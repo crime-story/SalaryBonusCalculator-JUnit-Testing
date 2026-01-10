@@ -6,7 +6,7 @@
 ![Coverage](https://img.shields.io/badge/Code_Coverage-100%25-brightgreen)
 
 ---
-* Popescu Paullo Robertto Karloss*
+* Popescu Paullo Robertto Karloss
 * Grupa: 506 IS
 * Materie: Testarea Sistemelor Software
 
